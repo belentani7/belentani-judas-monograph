@@ -9,6 +9,7 @@ import MagicGate from '@/components/MagicGate';
 import TopNav from '@/components/TopNav';
 import HarmonicBar from '@/components/HarmonicBar';
 import WaveformCanvas from '@/components/WaveformCanvas';
+import GalacticShaderBackground from '@/components/GalacticShaderBackground';
 
 /**
  * BELENTANI // JUDAS ERA - OMEGA CORE
@@ -221,6 +222,7 @@ export default function Home() {
       <div ref={cursorCrossRef} className="cursor-cross" />
 
       {/* ATMOSPHERE */}
+      <GalacticShaderBackground />
       <div className="vignette" />
       <div className="grain" />
       <div className="scanlines" />
