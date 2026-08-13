@@ -10,6 +10,7 @@ import TopNav from '@/components/TopNav';
 import HarmonicBar from '@/components/HarmonicBar';
 import WaveformCanvas from '@/components/WaveformCanvas';
 import GalacticShaderBackground from '@/components/GalacticShaderBackground';
+import QuantumTimelineViewer from '@/components/QuantumTimelineViewer';
 
 /**
  * BELENTANI // JUDAS ERA - OMEGA CORE
@@ -325,10 +326,11 @@ export default function Home() {
             <span className="text-[#b026ff] italic">DESAFÍOS</span>
           </h2>
           <p className="section-subtitle font-mono text-sm text-[#ff003c] tracking-widest mb-16 opacity-0">
-            Sistema Gamificado - Desbloquea Contenido Secreto
+            // CÓDIGOS // DESAFÍOS // VALORES //
           </p>
           <div className="w-full max-w-4xl">
             <ChallengeSystem />
+            <QuantumTimelineViewer />
           </div>
         </section>
 
