@@ -5,6 +5,10 @@ import ChallengeSystem from '@/components/ChallengeSystem';
 import GlitchGallery from '@/components/GlitchGallery';
 import MusicPlayer from '@/components/MusicPlayer';
 import AIStudio from '@/components/AIStudio';
+import MagicGate from '@/components/MagicGate';
+import TopNav from '@/components/TopNav';
+import HarmonicBar from '@/components/HarmonicBar';
+import WaveformCanvas from '@/components/WaveformCanvas';
 
 /**
  * BELENTANI // JUDAS ERA - OMEGA CORE
@@ -181,6 +185,7 @@ export default function Home() {
 
   return (
     <div className="w-full bg-[#050505] text-white overflow-x-hidden">
+      <MagicGate />
       {/* BOOT SCREEN */}
       <div
         ref={bootScreenRef}
@@ -218,6 +223,10 @@ export default function Home() {
       {/* ATMOSPHERE */}
       <div className="vignette" />
       <div className="grain" />
+      <div className="scanlines" />
+      <TopNav />
+      <HarmonicBar />
+      <WaveformCanvas />
 
       {/* HUD LAYER */}
       <div className="hud-layer">
@@ -268,7 +277,7 @@ export default function Home() {
         </section>
 
         {/* THE ARTIST SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="artist" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             THE <span className="text-white italic">ARTIST</span>
           </h2>
@@ -296,7 +305,7 @@ export default function Home() {
         </section>
 
         {/* PORTAL SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="portal" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             <span className="text-[#00ffff] italic">PORTAL</span>
           </h2>
@@ -309,7 +318,7 @@ export default function Home() {
         </section>
 
         {/* CHALLENGES SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="challenges" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             <span className="text-[#b026ff] italic">DESAFÍOS</span>
           </h2>
@@ -322,7 +331,7 @@ export default function Home() {
         </section>
 
         {/* SYNTHESIZER SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="synthesizer" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             <span className="text-[#00ff41] italic">SYNTHESIZER</span>
           </h2>
@@ -335,7 +344,7 @@ export default function Home() {
         </section>
 
         {/* ART GALLERY SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="gallery" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             ART <span className="text-white italic">GALLERY</span>
           </h2>
@@ -348,7 +357,7 @@ export default function Home() {
         </section>
 
         {/* MUSIC SECTION - ENHANCED */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="music" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             <span className="text-[#00ffff] italic">MUSIC</span> ARCHIVE
           </h2>
@@ -361,7 +370,7 @@ export default function Home() {
         </section>
 
         {/* STUDIO SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="studio" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             AI <span className="text-white italic">STUDIO</span>
           </h2>
@@ -374,7 +383,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT SECTION */}
-        <section className="section min-h-screen flex flex-col justify-center items-center px-8">
+        <section id="contact" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
             <span className="text-white italic">CONTACT</span>
           </h2>
@@ -404,7 +413,7 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <section className="min-h-screen flex flex-col justify-center items-center px-8 text-center">
+        <section id="omega" className="min-h-screen flex flex-col justify-center items-center px-8 text-center">
           <div className="space-y-6 max-w-2xl">
             <h2 className="font-[Cinzel_Decorative] text-5xl font-bold text-[#ffd700]">
               LA LLAVE DORADA
