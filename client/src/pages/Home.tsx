@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import EditorialHero from '@/components/EditorialHero';
 import EditorialCaseStudies from '@/components/EditorialCaseStudies';
+import JudasChronicleArchive from '@/components/JudasChronicleArchive';
 import { useCinematicMotion } from '@/hooks/useCinematicMotion';
 
 export default function Home() {
@@ -53,6 +54,9 @@ export default function Home() {
         </section>
 
         <EditorialCaseStudies />
+
+        {/* JUDAS MASSIVE CHRONICLE ARCHIVE */}
+        <JudasChronicleArchive />
 
         <section className="principles-section">
           <div className="principles-heading" data-reveal>
