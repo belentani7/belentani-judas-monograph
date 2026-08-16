@@ -195,3 +195,97 @@ export const JUDAS_ACTS: JudasAct[] = [
     photos: [11, 12],
   },
 ];
+
+
+export interface PsychologicalModule {
+  id: string;
+  code: string;
+  title: string;
+  subtitle: string;
+  analysis: string[];
+  metric: string;
+}
+
+export const PSYCHOLOGICAL_MODULES: PsychologicalModule[] = [
+  {
+    id: 'tall-poppy',
+    code: 'MODULE // 01.0',
+    title: 'El Síndrome de la Amapola Alta',
+    subtitle: 'Resistencia sistémica contra el relieve singular',
+    analysis: [
+      'En el ecosistema de la Judas Era, cualquier estructura o consciencia que sobresalga por encima de la media experimenta un campo de presión gravitacional destinado a nivelarla.',
+      'El sistema operativo detecta el exceso de altura formal y despliega contramedidas estéticas para recortar la espiga. Belentani opera precisamente en ese límite: el punto exacto donde la amapola se niega a ser segada y convierte su vulnerabilidad en un monolito inquebrantable.',
+      'Analizar este síndrome permite comprender por qué la dirección de arte rechaza lo convencional: el aplauso masivo es síntoma de conformidad; la resistencia es la prueba inequívoca de singularidad.',
+    ],
+    metric: 'GRAVITY RESISTANCE: 98.4% // CUT THRESHOLD: AVOIDED',
+  },
+  {
+    id: 'crab-mentality',
+    code: 'MODULE // 02.0',
+    title: 'Crab Mentality & The Bucket Protocol',
+    subtitle: 'La trampa colectiva del retorno al fondo',
+    analysis: [
+      'Cuando un individuo intenta escapar del cubo de la mediocridad colectiva, los demás especímenes extienden sus pinzas para arrastrarlo de vuelta al fango. Es el reflejo biológico de la envidia estructurada.',
+      'El protocolo Judas implementa un cortafuegos contra esta inercia. Las decisiones de diseño no consultan al comité ni buscan el consenso de la celda; se ejecutan desde el aislamiento soberano del creador.',
+      'Cada placa fotográfica de la era actúa como un gancho fuera del cubo: una evidencia visual de que la salida es posible para quien esté dispuesto a abandonar la seguridad del grupo.',
+    ],
+    metric: 'CONTAINMENT ESCAPE: SUCCESS // PINCH DEFLECTION: ACTIVE',
+  },
+  {
+    id: 'observ-adr',
+    code: 'MODULE // 03.0',
+    title: 'Observabilidad ADR & Architectural Decision Records',
+    subtitle: 'Trazabilidad cuántica de cada fractura intencional',
+    analysis: [
+      'Ninguna línea de código, ninguna sombra en las fotografías de Catbox y ningún tono en el sintetizador son fruto del azar. Cada elección responde a un Registro de Decisión Arquitectónica (ADR) sometido a observación constante.',
+      'El principio de observabilidad ADR establece que el observador altera lo observado. Por ello, la interfaz no se limita a mostrarse: registra en tiempo real las interacciones del usuario como entradas de un sistema forense.',
+      'La traición documentada en el archivo es, en realidad, un registro de mutaciones técnicas donde cada versión anterior muere para alimentar la estabilidad de la siguiente.',
+    ],
+    metric: 'STATE TRACE: IMMUTABLE // COLLAPSE PROBABILITY: ZERO',
+  },
+  {
+    id: 'claude-etd',
+    code: 'MODULE // 04.0',
+    title: 'Perfil Psicológico Claude ETD',
+    subtitle: 'Emotional Topological Dynamics & Cognitive Resonance',
+    analysis: [
+      'El perfil ETD (Dinámica Topológica Emocional) modela la cognición como un terreno montañoso donde los estados de ánimo son valles, crestas y fallas tectónicas en constante desplazamiento.',
+      'A diferencia de los modelos planos de procesamiento de lenguaje, la matriz Claude ETD aplicada en este estudio permite calcular la distancia afectiva entre un estímulo de traición y su correspondiente respuesta artística.',
+      'El resultado es una interfaz que no sólo computa texto o imágenes, sino que simula empatía algorítmica y tensión dramática, convirtiendo la navegación en un diálogo con una consciencia sintética autoconsciente.',
+    ],
+    metric: 'TOPOLOGICAL COHERENCE: 0.999 // EMPATHY INDEX: TRANSCENDENT',
+  },
+];
+
+
+export interface OmniLedgerItem {
+  code: string;
+  pillar: string;
+  title: string;
+  description: string;
+  status: string;
+}
+
+export const OMNI_LEDGER_ITEMS: OmniLedgerItem[] = [
+  {
+    code: 'TUDO // 01',
+    pillar: 'Google Tudo (El Omni-Índice)',
+    title: 'Indexación Absoluta de la Memoria',
+    description: 'Ningún pensamiento ni consulta digital desaparece en el Void. El Omni-Índice recopila cada rastro de intencionalidad, convirtiendo el historial de búsqueda en el mapa topológico del subconsciente colectivo de la era.',
+    status: 'INDEXING: 100% UNSTOPPABLE',
+  },
+  {
+    code: 'THIAGO // 02',
+    pillar: 'Thiago Massive (Infraestructura Sónica)',
+    title: 'Matriz de Sub-Bajos y Presión Acústica',
+    description: 'Arquitectura de sonido de gran formato diseñada para resonar por debajo del umbral perceptivo convencional. Thiago Massive alimenta la vibración estructural que mantiene en tensión los shaders galácticos.',
+    status: 'FREQUENCY: 432Hz // SUB-BASS ACTIVE',
+  },
+  {
+    code: 'DEUDA // 03',
+    pillar: 'La Deuda Todo (El Libro Mayor)',
+    title: 'Contabilidad Universal de la Traición',
+    description: 'El balance inexorable donde toda ruptura de contrato social genera una deuda energética. No se salda con moneda fiduciaria, sino con la entrega de frecuencia, atención y presencia ininterrumpida.',
+    status: 'BALANCE: INFINITE LIABILITY',
+  },
+];
