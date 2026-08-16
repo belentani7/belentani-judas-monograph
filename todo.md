@@ -47,3 +47,11 @@
 ## Regla de calidad
 
 No añadir otra capa de componentes si no mejora claramente la dirección de arte. La siguiente revisión debe evaluarse por composición, identidad, legibilidad y memoria de marca, no por cantidad de funcionalidades.
+
+
+## Incidencia de Acceso
+
+- [ ] Diagnosticar si el servidor o el preview están caídos.
+- [ ] Reiniciar el servidor de desarrollo y verificar logs.
+- [ ] Comprobar la URL pública en el entorno.
+- [ ] Entregar el acceso validado.
