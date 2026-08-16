@@ -11,6 +11,7 @@ import HarmonicBar from '@/components/HarmonicBar';
 import WaveformCanvas from '@/components/WaveformCanvas';
 import GalacticShaderBackground from '@/components/GalacticShaderBackground';
 import QuantumTimelineViewer from '@/components/QuantumTimelineViewer';
+import QuantumTerminalConsole from '@/components/QuantumTerminalConsole';
 
 /**
  * BELENTANI // JUDAS ERA - OMEGA CORE
@@ -331,6 +332,7 @@ export default function Home() {
           <div className="w-full max-w-4xl">
             <ChallengeSystem />
             <QuantumTimelineViewer />
+            <QuantumTerminalConsole />
           </div>
         </section>
 
