@@ -55,3 +55,15 @@ No añadir otra capa de componentes si no mejora claramente la dirección de art
 - [x] Reiniciar el servidor de desarrollo y verificar logs.
 - [x] Comprobar la URL pública en el entorno.
 - [x] Entregar el acceso validado.
+
+
+## Refactor visual solicitado por el usuario
+
+- [ ] Revisar las 12 imágenes una por una.
+- [ ] Conservar únicamente imágenes donde aparezca el usuario o un objeto claramente identificable.
+- [ ] Descartar escenas ambiguas, abstractas o ajenas al usuario/objeto.
+- [ ] Eliminar `Cinzel Decorative` de hero, títulos y archivo.
+- [ ] Elegir una tipografía seca, precisa y coherente con BELENTANI.
+- [ ] Sustituir el collage de seis imágenes por una sola imagen dominante por escena.
+- [ ] Rehacer el ritmo editorial con aire, escala y separación.
+- [ ] Validar que la portada ya no se percibe como una plantilla genérica.
