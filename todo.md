@@ -51,7 +51,7 @@ No añadir otra capa de componentes si no mejora claramente la dirección de art
 
 ## Incidencia de Acceso
 
-- [ ] Diagnosticar si el servidor o el preview están caídos.
-- [ ] Reiniciar el servidor de desarrollo y verificar logs.
-- [ ] Comprobar la URL pública en el entorno.
-- [ ] Entregar el acceso validado.
+- [x] Diagnosticar si el servidor o el preview están caídos.
+- [x] Reiniciar el servidor de desarrollo y verificar logs.
+- [x] Comprobar la URL pública en el entorno.
+- [x] Entregar el acceso validado.
