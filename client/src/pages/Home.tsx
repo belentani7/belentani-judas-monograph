@@ -14,6 +14,7 @@ import CinematicHero from '@/components/CinematicHero';
 import QuantumTimelineViewer from '@/components/QuantumTimelineViewer';
 import QuantumTerminalConsole from '@/components/QuantumTerminalConsole';
 import CosmicCurtainShowcase from '@/components/CosmicCurtainShowcase';
+import PortfolioShowcase from '@/components/PortfolioShowcase';
 
 /**
  * BELENTANI // JUDAS ERA - OMEGA CORE
@@ -360,6 +361,9 @@ export default function Home() {
             <MusicPlayer />
           </div>
         </section>
+
+        {/* PORTFOLIO SHOWCASE SECTION */}
+        <PortfolioShowcase />
 
         {/* STUDIO SECTION */}
         <section id="studio" className="section min-h-screen flex flex-col justify-center items-center px-8">
