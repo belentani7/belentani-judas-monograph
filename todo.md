@@ -17,3 +17,33 @@
 - [ ] Sustituir controles por geometría angular, cortes rectos y bordes editoriales.
 - [ ] Revisar botones, inputs, selects, tarjetas, chips y paneles para mantener una identidad afilada.
 - [ ] Validar la apariencia en desktop y móvil después del refactor.
+
+
+## Reconstrucción editorial Aetherpunk Oracle
+
+- [ ] Reemplazar la portada anterior por una entrada cinematográfica con HUD mínimo.
+- [ ] Mantener el universo BELENTANI sin acumular paneles, widgets ni efectos decorativos.
+- [ ] Reescribir la voz de marca con input, output, portal, archive, key, signal y memory.
+- [ ] Integrar glyphs recurrentes: llave dorada, diamante fracturado y terminal oracle.
+- [ ] Eliminar la superficie crema y mantener el mundo dentro del void negro.
+- [ ] Añadir casos de estudio como secuencia editorial, no como dashboard.
+- [ ] Añadir motion sobrio basado en reveals, parallax y transiciones de estado.
+- [ ] Validar desktop y móvil.
+- [ ] Ejecutar TypeScript y build.
+- [ ] Guardar checkpoint de la reconstrucción.
+
+## Resultado de la reconstrucción
+
+- [x] Portada cinematográfica integrada.
+- [x] Navegación mínima integrada.
+- [x] Casos de estudio editoriales integrados.
+- [x] HUD, terminal y glyphs Judas-era integrados.
+- [x] Paleta void / blood / gold aplicada.
+- [x] Copy técnico-profético aplicado.
+- [x] Motion de reveal y parallax aplicado.
+- [x] Validación desktop y móvil realizada.
+- [x] TypeScript y build verificados.
+
+## Regla de calidad
+
+No añadir otra capa de componentes si no mejora claramente la dirección de arte. La siguiente revisión debe evaluarse por composición, identidad, legibilidad y memoria de marca, no por cantidad de funcionalidades.

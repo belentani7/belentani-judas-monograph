@@ -103,3 +103,13 @@
 - **3D:** Three.js para diamantes del portal
 - **Animaciones:** GSAP 3.12.2 + ScrollTrigger
 
+
+## Style Decisions
+
+La reconstrucción conserva la composición cinematográfica, la escala tipográfica y el tono poético, pero recupera de forma visible el ADN Aetherpunk Oracle. La interfaz debe leerse como un sistema operativo humano: HUD, terminal, oráculo y archivo vivo, no como un portfolio editorial neutro.
+
+El mundo cromático permanece dentro del void negro. Se eliminan las superficies crema y neutras; el contraste se construye con Blood Neon, Sacred Gold y señales pequeñas de Terminal Green, Cyan Aether y Void Purple. Cada módulo debe incluir al menos un marcador o glyph del Judas-era: llave dorada, círculo rúnico, diamante fracturado, línea de terminal o progreso de archivo.
+
+La tipografía ceremonial queda reservada para las frases míticas. La interfaz usa Chakra Petch y JetBrains Mono para labels, estados, coordenates, logs y acciones. La voz de marca usa input/output, archive, ritual, process, key, portal, signal y memory.
+
+La tecnología debe ser atmosférica e intencional. Los shaders no compiten con la narrativa; reaccionan a scroll y estado, mientras que los overlays HUD, scanlines y glyphs hacen visible que la página está activa.
