@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import EditorialHero from '@/components/EditorialHero';
+import MassivelyExpandedHero from '@/components/MassivelyExpandedHero';
 import EditorialCaseStudies from '@/components/EditorialCaseStudies';
 import JudasChronicleArchive from '@/components/JudasChronicleArchive';
 import JudasPsychologicalCore from '@/components/JudasPsychologicalCore';
@@ -41,7 +41,7 @@ export default function Home() {
       </nav>
 
       <main>
-        <EditorialHero />
+        <MassivelyExpandedHero />
 
         <section id="method" className="manifesto-section">
           <div className="manifesto-section__label" data-reveal>
