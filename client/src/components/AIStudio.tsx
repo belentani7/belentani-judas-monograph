@@ -114,14 +114,14 @@ export default function AIStudio() {
       {/* Chat Tab */}
       {activeTab === 'chat' && (
         <div className="space-y-4">
-          <div className="h-96 bg-[rgba(255,0,60,0.02)] border border-[rgba(255,0,60,0.2)] rounded p-4 overflow-y-auto space-y-3">
+          <div className="h-96 bg-[rgba(255,0,60,0.02)] border border-[rgba(255,0,60,0.2)] clip-corner p-4 overflow-y-auto space-y-3">
             {messages.map((msg, idx) => (
               <div
                 key={idx}
                 className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-xs px-4 py-2 rounded text-sm font-mono ${
+                  className={`max-w-xs px-4 py-2 clip-corner text-sm font-mono ${
                     msg.role === 'user'
                       ? 'bg-[rgba(255,215,0,0.1)] text-[#ffd700] border border-[#ffd700]/30'
                       : 'bg-[rgba(255,0,60,0.1)] text-[#ff003c] border border-[#ff003c]/30'
@@ -140,7 +140,7 @@ export default function AIStudio() {
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
               placeholder="Escribe tu pregunta..."
-              className="flex-1 px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm rounded outline-none focus:border-[#ff003c]"
+              className="flex-1 px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm clip-corner outline-none focus:border-[#ff003c]"
             />
             <button
               onClick={handleSendMessage}
@@ -164,7 +164,7 @@ export default function AIStudio() {
               value={lyricsInput}
               onChange={(e) => setLyricsInput(e.target.value)}
               placeholder="Ej: La Llave Dorada, Traición, Redención..."
-              className="w-full px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm rounded outline-none focus:border-[#ff003c]"
+              className="w-full px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm clip-corner outline-none focus:border-[#ff003c]"
             />
           </div>
 
@@ -176,7 +176,7 @@ export default function AIStudio() {
           </button>
 
           {generatedLyrics && (
-            <div className="p-4 bg-[rgba(255,0,60,0.05)] border border-[#ff003c]/30 rounded">
+            <div className="p-4 bg-[rgba(255,0,60,0.05)] border border-[#ff003c]/30 clip-corner">
               <p className="text-xs font-mono text-[#ff003c] mb-2 tracking-widest">LETRAS GENERADAS</p>
               <p className="text-sm text-[rgba(255,255,255,0.8)] whitespace-pre-wrap font-mono leading-relaxed">
                 {generatedLyrics}
@@ -197,7 +197,7 @@ export default function AIStudio() {
               value={analysisText}
               onChange={(e) => setAnalysisText(e.target.value)}
               placeholder="Pega aquí el texto de una canción o poema..."
-              className="w-full px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm rounded outline-none focus:border-[#ff003c] h-32 resize-none"
+              className="w-full px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm clip-corner outline-none focus:border-[#ff003c] h-32 resize-none"
             />
           </div>
 
@@ -209,8 +209,8 @@ export default function AIStudio() {
           </button>
 
           {analysis && (
-            <div className="p-4 bg-[rgba(0,255,65,0.05)] border border-[#00ff41]/30 rounded">
-              <p className="text-xs font-mono text-[#00ff41] mb-2 tracking-widest">RESULTADOS</p>
+            <div className="p-4 bg-[rgba(255,215,0,0.05)] border border-[#ffd700]/30 clip-corner">
+              <p className="text-xs font-mono text-[#ffd700] mb-2 tracking-widest">RESULTADOS</p>
               <p className="text-sm text-[rgba(255,255,255,0.8)] whitespace-pre-wrap font-mono">
                 {analysis}
               </p>
@@ -220,7 +220,7 @@ export default function AIStudio() {
       )}
 
       {/* Info */}
-      <div className="p-3 bg-[rgba(0,255,255,0.05)] border border-[#00ffff]/30 rounded font-mono text-xs text-[#00ffff]">
+      <div className="p-3 bg-[rgba(255,255,255,0.05)] border border-[#ffffff]/30 clip-corner font-mono text-xs text-[#ffffff]">
         <p>
           <span className="text-[#ff003c]">✦</span> AI Studio - Herramientas creativas impulsadas por IA
         </p>

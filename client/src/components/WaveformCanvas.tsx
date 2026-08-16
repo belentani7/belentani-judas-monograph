@@ -77,7 +77,7 @@ export default function WaveformCanvas() {
       width={300}
       height={300}
       aria-hidden="true"
-      className={`fixed bottom-40 left-1/2 z-[400] h-[300px] w-[300px] -translate-x-1/2 rounded-full border border-[rgba(255,0,60,0.4)] bg-[rgba(0,0,0,0.3)] shadow-[0_0_60px_rgba(255,0,60,0.1)] transition-opacity duration-500 ${isActive ? 'opacity-80' : 'opacity-60'}`}
+      className={`fixed bottom-40 left-1/2 z-[400] h-[300px] w-[300px] -translate-x-1/2 clip-corner border border-[rgba(255,0,60,0.4)] bg-[rgba(0,0,0,0.3)] shadow-[0_0_60px_rgba(255,0,60,0.1)] transition-opacity duration-500 ${isActive ? 'opacity-80' : 'opacity-60'}`}
     />
   );
 }

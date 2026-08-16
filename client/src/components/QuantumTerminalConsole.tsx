@@ -20,8 +20,8 @@ export default function QuantumTerminalConsole() {
   };
 
   return (
-    <div className="my-12 w-full max-w-4xl rounded-xl border border-[rgba(255,0,60,0.4)] bg-[rgba(10,0,5,0.9)] p-8 backdrop-blur-2xl">
-      <div className="flex items-center justify-between border-b border-[rgba(255,0,60,0.2)] pb-4 font-mono text-xs tracking-widest text-[#00ff41]">
+    <div className="my-12 w-full max-w-4xl clip-corner border border-[rgba(255,0,60,0.4)] bg-[rgba(10,0,5,0.9)] p-8 backdrop-blur-2xl">
+      <div className="flex items-center justify-between border-b border-[rgba(255,0,60,0.2)] pb-4 font-mono text-xs tracking-widest text-[#ffd700]">
         <span>[PVC-U Ω-MAX TERMINAL CONSOLE]</span>
         <span>SECURE GATEWAY</span>
       </div>
@@ -33,7 +33,7 @@ export default function QuantumTerminalConsole() {
             type="text"
             value={callSign}
             onChange={(e) => setCallSign(e.target.value)}
-            className="w-full rounded border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
+            className="w-full clip-corner border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
           />
         </div>
 
@@ -42,7 +42,7 @@ export default function QuantumTerminalConsole() {
           <select
             value={sector}
             onChange={(e) => setSector(e.target.value as any)}
-            className="w-full rounded border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
+            className="w-full clip-corner border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
           >
             <option value="GENESIS">GENESIS</option>
             <option value="JUDAS">JUDAS</option>
@@ -56,7 +56,7 @@ export default function QuantumTerminalConsole() {
             type="number"
             value={clearance}
             onChange={(e) => setClearance(Number(e.target.value))}
-            className="w-full rounded border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
+            className="w-full clip-corner border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
           />
         </div>
 
@@ -66,14 +66,14 @@ export default function QuantumTerminalConsole() {
             type="text"
             value={hash}
             onChange={(e) => setHash(e.target.value)}
-            className="w-full rounded border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
+            className="w-full clip-corner border border-[rgba(255,0,60,0.3)] bg-black px-4 py-2 text-white focus:border-[#ff003c] focus:outline-none"
           />
         </div>
 
         <div className="md:col-span-2">
           <button
             type="submit"
-            className="w-full rounded bg-[#ff003c] py-3 font-mono text-xs uppercase tracking-widest text-white shadow-[0_0_20px_#ff003c] transition-all hover:bg-[#ff1a4d]"
+            className="w-full clip-corner bg-[#ff003c] py-3 font-mono text-xs uppercase tracking-widest text-white shadow-[0_0_20px_#ff003c] transition-all hover:bg-[#ff1a4d]"
           >
             Ejecutar Validación PVC-U Ω-Max
           </button>
@@ -81,7 +81,7 @@ export default function QuantumTerminalConsole() {
       </form>
 
       {envelope && (
-        <div className={`mt-6 rounded border p-4 font-mono text-xs ${envelope.validationStatus === 'PASSED' ? 'border-[#00ff41] bg-[rgba(0,255,65,0.05)] text-[#00ff41]' : 'border-[#ff003c] bg-[rgba(255,0,60,0.05)] text-[#ff003c]'}`}>
+        <div className={`mt-6 clip-corner border p-4 font-mono text-xs ${envelope.validationStatus === 'PASSED' ? 'border-[#ffd700] bg-[rgba(255,215,0,0.05)] text-[#ffd700]' : 'border-[#ff003c] bg-[rgba(255,0,60,0.05)] text-[#ff003c]'}`}>
           <p className="font-bold">STATUS: {envelope.validationStatus}</p>
           <p>LAYER: {envelope.layer}</p>
           <p>TRACE ID: {envelope.traceId}</p>

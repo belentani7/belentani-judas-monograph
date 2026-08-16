@@ -49,10 +49,10 @@
   --red-glow: rgba(255, 0, 60, 0.8);
   --text-main: #ffffff;
   --text-dim: rgba(255, 255, 255, 0.5);
-  --term-green: #00ff41;
+  --term-green: #ffd700;700;
   --gold-sacred: #ffd700;
-  --cyan-aether: #00ffff;
-  --purple-void: #b026ff;
+  --cyan-aether: #ffffff;
+  --purple-void: #ff003c;003c;
   --border-glass: rgba(255, 0, 60, 0.4);
 
   /* TYPOGRAPHY */
@@ -68,9 +68,9 @@
   --sidebar-primary-foreground: #ffffff;
   --chart-1: #ff003c;
   --chart-2: #ffd700;
-  --chart-3: #00ff41;
-  --chart-4: #00ffff;
-  --chart-5: #b026ff;
+  --chart-3: #ffd700;
+  --chart-4: #ffffff;
+  --chart-5: #ff003c;
   --radius: 0.65rem;
   --background: #050505;
   --foreground: #ffffff;
@@ -961,4 +961,45 @@ body.ascended {
   .scanlines { display: none; }
   .mbox, .ggem.lit { animation: none; }
   #waveform-canvas { display: none; }
+}
+
+
+/* BRAND GEOMETRY SYSTEM — no rounded UI */
+.clip-corner {
+  border-radius: 0 !important;
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+input.clip-corner,
+select.clip-corner,
+textarea.clip-corner,
+button.clip-corner,
+a.clip-corner {
+  border-radius: 0 !important;
+}
+
+.brand-editorial,
+.font-\[Cinzel_Decorative\] {
+  font-family: var(--font-fantasy);
+}
+
+.font-\[Chakra_Petch\] {
+  font-family: var(--font-ui);
+}
+
+/* A single identity: no rainbow utility accents in brand surfaces */
+.brand-surface {
+  background: var(--obsidian-glass, #0a0a0c);
+  border: 1px solid rgba(255, 0, 60, 0.32);
+  color: var(--text-main);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.44), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.brand-rule {
+  height: 1px;
+  background: linear-gradient(90deg, var(--red-blood), rgba(255, 0, 60, 0.08), transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .clip-corner { transition: none !important; }
 }

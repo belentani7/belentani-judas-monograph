@@ -43,7 +43,7 @@ export default function Portal3D() {
     pointLight.position.set(5, 5, 5);
     scene.add(pointLight);
 
-    const pointLight2 = new THREE.PointLight(0x00ffff, 1);
+    const pointLight2 = new THREE.PointLight(0xffd700, 1);
     pointLight2.position.set(-5, -5, 5);
     scene.add(pointLight2);
 
@@ -166,7 +166,7 @@ export default function Portal3D() {
 
   return (
     <div className="relative w-full">
-      <div ref={containerRef} className="w-full h-96 bg-gradient-to-b from-[rgba(0,255,255,0.05)] to-[rgba(255,0,60,0.05)] rounded-lg border border-[#00ffff]/20" />
+      <div ref={containerRef} className="w-full h-96 bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,0,60,0.05)] clip-corner border border-[#ffffff]/20" />
 
       {selectedDiamond !== null && (
         <div className="mt-6 p-6 glass-panel bg-gradient-to-br from-[rgba(20,0,10,0.8)] to-[rgba(0,0,0,0.6)] backdrop-blur-2xl border border-[rgba(255,0,60,0.4)]">

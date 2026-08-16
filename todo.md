@@ -8,3 +8,12 @@
 - [ ] Fase 6: Optimización de rendimiento (requestAnimationFrame throttling, control de memoria WebGL, accesibilidad WCAG, responsive).
 - [ ] Fase 7: Validación con TypeScript, build de producción y checkpoint final.
 - [ ] Fase 8: Entrega del resultado supremo al usuario.
+
+
+## Restricción de dirección de arte
+
+- [ ] Eliminar fuentes redondeadas o geométricas blandas de la interfaz.
+- [ ] Eliminar radios grandes y tarjetas tipo pill donde no sean imprescindibles.
+- [ ] Sustituir controles por geometría angular, cortes rectos y bordes editoriales.
+- [ ] Revisar botones, inputs, selects, tarjetas, chips y paneles para mantener una identidad afilada.
+- [ ] Validar la apariencia en desktop y móvil después del refactor.

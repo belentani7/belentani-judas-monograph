@@ -76,7 +76,7 @@ export default function GlitchGallery() {
             key={image.id}
             onMouseEnter={() => setHoveredId(image.id)}
             onMouseLeave={() => setHoveredId(null)}
-            className="relative group overflow-hidden rounded-lg border border-[#ff003c]/30 hover:border-[#ff003c] transition-all duration-300"
+            className="relative group overflow-hidden clip-corner border border-[#ff003c]/30 hover:border-[#ff003c] transition-all duration-300"
             style={{
               transform: `translateY(${Math.sin(scrollProgress * Math.PI + idx) * 20}px)`,
             }}
@@ -123,7 +123,7 @@ export default function GlitchGallery() {
                 <h3 className="font-[Cinzel_Decorative] text-lg font-bold text-[#ffd700] mb-1">
                   {image.title}
                 </h3>
-                <p className="text-xs text-[#00ff41] font-mono">FASE_{image.id}</p>
+                <p className="text-xs text-[#ffd700] font-mono">FASE_{image.id}</p>
               </div>
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function GlitchGallery() {
       `}</style>
 
       {/* Info */}
-      <div className="p-4 bg-[rgba(0,255,65,0.05)] border border-[#00ff41]/30 rounded font-mono text-xs text-[#00ff41]">
+      <div className="p-4 bg-[rgba(255,215,0,0.05)] border border-[#ffd700]/30 clip-corner font-mono text-xs text-[#ffd700]">
         <p>
           <span className="text-[#ff003c]">✦</span> Galería de Arte - 6 fases de la crónica de Judas
         </p>

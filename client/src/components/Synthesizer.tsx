@@ -104,7 +104,7 @@ export default function Synthesizer() {
   return (
     <div className="w-full space-y-6">
       {/* Visualizer */}
-      <div className="w-full h-24 bg-gradient-to-b from-[rgba(0,255,65,0.1)] to-[rgba(255,0,60,0.05)] rounded-lg border border-[#00ff41]/20 p-4">
+      <div className="w-full h-24 bg-gradient-to-b from-[rgba(255,215,0,0.1)] to-[rgba(255,0,60,0.05)] clip-corner border border-[#ffd700]/20 p-4">
         <canvas
           ref={visualizerRef}
           className="w-full h-full"
@@ -119,7 +119,7 @@ export default function Synthesizer() {
             onMouseDown={() => handleKeyDown(note.key)}
             onMouseUp={() => handleKeyUp(note.key)}
             onMouseLeave={() => handleKeyUp(note.key)}
-            className={`py-4 px-2 font-mono text-xs font-bold rounded transition-all duration-100 ${
+            className={`py-4 px-2 font-mono text-xs font-bold clip-corner transition-all duration-100 ${
               activeKeys.has(note.key)
                 ? 'bg-[#ff003c] text-white shadow-[0_0_20px_rgba(255,0,60,0.8)]'
                 : 'bg-[rgba(255,255,255,0.1)] text-[rgba(255,255,255,0.7)] border border-[#ff003c]/30 hover:border-[#ff003c]'
@@ -139,7 +139,7 @@ export default function Synthesizer() {
             <button
               key={melody}
               onClick={() => playMelody(melody as keyof typeof melodies)}
-              className="py-3 px-4 bg-[rgba(255,215,0,0.1)] border border-[#ffd700] text-[#ffd700] hover:bg-[#ffd700] hover:text-black transition-all duration-300 font-mono text-xs font-bold rounded"
+              className="py-3 px-4 bg-[rgba(255,215,0,0.1)] border border-[#ffd700] text-[#ffd700] hover:bg-[#ffd700] hover:text-black transition-all duration-300 font-mono text-xs font-bold clip-corner"
             >
               {melody.toUpperCase()}
             </button>
@@ -148,10 +148,10 @@ export default function Synthesizer() {
       </div>
 
       {/* Status */}
-      <div className="p-3 bg-[rgba(0,255,65,0.05)] border border-[#00ff41]/30 rounded font-mono text-xs text-[#00ff41]">
+      <div className="p-3 bg-[rgba(255,215,0,0.05)] border border-[#ffd700]/30 clip-corner font-mono text-xs text-[#ffd700]">
         {isInitialized ? (
           <>
-            <span className="text-[#00ff41]">✓</span> Sintetizador activo - Presiona las teclas o haz clic
+            <span className="text-[#ffd700]">✓</span> Sintetizador activo - Presiona las teclas o haz clic
           </>
         ) : (
           <>

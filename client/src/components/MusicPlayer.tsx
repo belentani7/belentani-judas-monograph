@@ -130,7 +130,7 @@ export default function MusicPlayer() {
                 {currentTrack.artist} • {currentTrack.duration}
               </p>
             </div>
-            <div className="text-right text-xs font-mono text-[#00ff41]">
+            <div className="text-right text-xs font-mono text-[#ffd700]">
               <div>{currentTrack.bpm} BPM</div>
               <div>{currentTrack.key}</div>
             </div>
@@ -144,8 +144,8 @@ export default function MusicPlayer() {
             >
               {isPlaying ? '⏸ PAUSE' : '▶ PLAY'}
             </button>
-            <div className="flex-1 h-1 bg-[rgba(255,0,60,0.1)] rounded-full">
-              <div className="h-full w-1/3 bg-[#ff003c] rounded-full" />
+            <div className="flex-1 h-1 bg-[rgba(255,0,60,0.1)] clip-corner">
+              <div className="h-full w-1/3 bg-[#ff003c] clip-corner" />
             </div>
             <span className="text-xs font-mono text-[rgba(255,255,255,0.5)]">1:15 / 3:45</span>
           </div>
@@ -204,7 +204,7 @@ export default function MusicPlayer() {
             <div
               key={track.id}
               onClick={() => setCurrentTrack(track)}
-              className={`p-3 rounded border transition-all cursor-pointer ${
+              className={`p-3 clip-corner border transition-all cursor-pointer ${
                 currentTrack?.id === track.id
                   ? 'bg-[rgba(255,0,60,0.1)] border-[#ff003c]'
                   : 'bg-[rgba(255,255,255,0.02)] border-[rgba(255,0,60,0.2)] hover:border-[#ff003c]'
@@ -227,8 +227,8 @@ export default function MusicPlayer() {
       </div>
 
       {/* Streaming Platforms */}
-      <div className="p-4 bg-[rgba(0,255,255,0.05)] border border-[#00ffff]/30 rounded space-y-3">
-        <p className="font-mono text-xs text-[#00ffff] tracking-widest">ESCUCHA EN TODAS PARTES</p>
+      <div className="p-4 bg-[rgba(255,255,255,0.05)] border border-[#ffffff]/30 clip-corner space-y-3">
+        <p className="font-mono text-xs text-[#ffffff] tracking-widest">ESCUCHA EN TODAS PARTES</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {[
             { name: 'Spotify', url: 'https://open.spotify.com/artist/2bU5Ir70YHHuUnq2f3WCYl', color: '#1DB954' },
@@ -245,7 +245,7 @@ export default function MusicPlayer() {
               href={platform.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2 px-3 rounded text-white text-xs font-mono text-center hover:shadow-lg transition-all"
+              className="py-2 px-3 clip-corner text-white text-xs font-mono text-center hover:shadow-lg transition-all"
               style={{ backgroundColor: platform.color }}
             >
               {platform.name}

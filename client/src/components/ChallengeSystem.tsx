@@ -65,7 +65,7 @@ export default function ChallengeSystem() {
   const [userMemory, setUserMemory] = useState<string[]>([]);
   const [riddleAnswer, setRiddleAnswer] = useState('');
 
-  const colors = ['#ff003c', '#ffd700', '#00ff41', '#00ffff', '#b026ff', '#ff6600', '#00ff88', '#ff0088'];
+  const colors = ['#ff003c', '#ffd700', '#ffd700', '#ffffff', '#ff003c', '#ffd700', '#ffd700', '#ff003c'];
 
   const handleSequenceClick = (diamondIndex: number) => {
     const correctSequence = [0, 1, 1, 1, 0]; // Gold, Red, Red, Red, Gold (indices)
@@ -140,7 +140,7 @@ export default function ChallengeSystem() {
           <p className="font-mono text-xs text-[#ff003c] tracking-widest">PROGRESO GENERAL</p>
           <p className="font-mono text-xs text-[#ffd700]">{completedCount}/5</p>
         </div>
-        <div className="w-full h-2 bg-[rgba(255,0,60,0.1)] rounded-full overflow-hidden border border-[#ff003c]/20">
+        <div className="w-full h-2 bg-[rgba(255,0,60,0.1)] clip-corner overflow-hidden border border-[#ff003c]/20">
           <div
             className="h-full bg-gradient-to-r from-[#ff003c] to-[#ffd700] transition-all duration-500"
             style={{ width: `${(completedCount / 5) * 100}%` }}
@@ -154,9 +154,9 @@ export default function ChallengeSystem() {
           <div
             key={challenge.id}
             onClick={() => !challenge.completed && setCurrentChallenge(challenge.id)}
-            className={`p-4 rounded-lg border transition-all duration-300 cursor-pointer ${
+            className={`p-4 clip-corner border transition-all duration-300 cursor-pointer ${
               challenge.completed
-                ? 'bg-[rgba(0,255,65,0.05)] border-[#00ff41] opacity-70'
+                ? 'bg-[rgba(255,215,0,0.05)] border-[#ffd700] opacity-70'
                 : currentChallenge === challenge.id
                   ? 'bg-[rgba(255,0,60,0.1)] border-[#ff003c] shadow-[0_0_20px_rgba(255,0,60,0.3)]'
                   : 'bg-[rgba(255,255,255,0.02)] border-[rgba(255,0,60,0.2)] hover:border-[#ff003c]'
@@ -166,7 +166,7 @@ export default function ChallengeSystem() {
               <h3 className="font-[Orbitron] text-sm font-bold text-[#ff003c]">
                 {challenge.id}. {challenge.title}
               </h3>
-              {challenge.completed && <span className="text-[#00ff41] text-lg">✓</span>}
+              {challenge.completed && <span className="text-[#ffd700] text-lg">✓</span>}
             </div>
             <p className="text-xs text-[rgba(255,255,255,0.6)] mb-2">{challenge.description}</p>
             <p className="text-[9px] text-[#ffd700] font-mono">Recompensa: {challenge.reward}</p>
@@ -191,7 +191,7 @@ export default function ChallengeSystem() {
                   <button
                     key={idx}
                     onClick={() => handleSequenceClick(idx)}
-                    className={`w-16 h-16 rounded-full font-bold transition-all ${
+                    className={`w-16 h-16 clip-corner font-bold transition-all ${
                       idx === 0
                         ? 'bg-[#ffd700] text-black hover:shadow-[0_0_30px_rgba(255,215,0,0.8)]'
                         : 'bg-[#ff003c] text-white hover:shadow-[0_0_30px_rgba(255,0,60,0.8)]'
@@ -201,7 +201,7 @@ export default function ChallengeSystem() {
                   </button>
                 ))}
               </div>
-              <p className="text-xs text-[#00ff41] font-mono">Progreso: {sequenceProgress.length}/5</p>
+              <p className="text-xs text-[#ffd700] font-mono">Progreso: {sequenceProgress.length}/5</p>
             </div>
           )}
 
@@ -219,7 +219,7 @@ export default function ChallengeSystem() {
                     key={color}
                     data-color={color}
                     onClick={() => handleMemoryClick(color)}
-                    className="aspect-square rounded transition-all"
+                    className="aspect-square clip-corner transition-all"
                     style={{
                       backgroundColor: color,
                       opacity: 0.7,
@@ -227,7 +227,7 @@ export default function ChallengeSystem() {
                   />
                 ))}
               </div>
-              <p className="text-xs text-[#00ff41] font-mono">Progreso: {userMemory.length}/{memorySequence.length}</p>
+              <p className="text-xs text-[#ffd700] font-mono">Progreso: {userMemory.length}/{memorySequence.length}</p>
             </div>
           )}
 
@@ -241,7 +241,7 @@ export default function ChallengeSystem() {
                 value={riddleAnswer}
                 onChange={(e) => setRiddleAnswer(e.target.value)}
                 placeholder="Tu respuesta..."
-                className="w-full px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm rounded outline-none focus:border-[#ff003c]"
+                className="w-full px-4 py-2 bg-[rgba(255,255,255,0.05)] border border-[#ff003c]/40 text-white font-mono text-sm clip-corner outline-none focus:border-[#ff003c]"
               />
               <button
                 onClick={handleRiddleSubmit}

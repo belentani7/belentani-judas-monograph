@@ -49,7 +49,7 @@ export default function TopNav() {
           <a
             key={id}
             href={`#${id}`}
-            className={`nav-dot block h-2 w-2 rounded-full transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffd700] ${activeId === id ? 'w-[30px] rounded bg-[#ff003c] shadow-[0_0_15px_#ff003c]' : 'bg-[rgba(255,255,255,0.2)] hover:scale-125 hover:bg-[#ff003c]'}`}
+            className={`nav-dot block h-2 w-2 clip-corner transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ffd700] ${activeId === id ? 'w-[30px] clip-corner bg-[#ff003c] shadow-[0_0_15px_#ff003c]' : 'bg-[rgba(255,255,255,0.2)] hover:scale-125 hover:bg-[#ff003c]'}`}
             aria-label={`Ir a ${label}`}
             aria-current={activeId === id ? 'page' : undefined}
             title={label}

@@ -10,8 +10,10 @@ import TopNav from '@/components/TopNav';
 import HarmonicBar from '@/components/HarmonicBar';
 import WaveformCanvas from '@/components/WaveformCanvas';
 import GalacticShaderBackground from '@/components/GalacticShaderBackground';
+import CinematicHero from '@/components/CinematicHero';
 import QuantumTimelineViewer from '@/components/QuantumTimelineViewer';
 import QuantumTerminalConsole from '@/components/QuantumTerminalConsole';
+import CosmicCurtainShowcase from '@/components/CosmicCurtainShowcase';
 
 /**
  * BELENTANI // JUDAS ERA - OMEGA CORE
@@ -193,10 +195,10 @@ export default function Home() {
       <div
         ref={bootScreenRef}
         id="boot-screen"
-        className="fixed inset-0 bg-black z-10000 flex flex-col items-center justify-center font-mono text-[#00ff41] text-sm text-center transition-opacity duration-1000"
+        className="fixed inset-0 bg-black z-10000 flex flex-col items-center justify-center font-mono text-[#ffd700] text-sm text-center transition-opacity duration-1000"
       >
         <div className="boot-log w-96 h-36 overflow-hidden text-left mb-5 opacity-80 font-mono text-xs">
-          <div className="text-[#00ff41]">
+          <div className="text-[#ffd700]">
             [SYSTEM] Initializing BELENTANI CREATIVE OS v3.0...
             <br />
             [BOOT] Loading core modules...
@@ -212,8 +214,8 @@ export default function Home() {
             [STATUS] System ready for consciousness transfer
           </div>
         </div>
-        <div className="boot-bar w-80 h-0.5 bg-[rgba(0,255,65,0.2)] relative overflow-hidden">
-          <div className="absolute inset-0 w-0 h-full bg-[#00ff41] shadow-[0_0_10px_#00ff41] animate-[bootLoad_3s_linear_forwards]" />
+        <div className="boot-bar w-80 h-0.5 bg-[rgba(255,215,0,0.2)] relative overflow-hidden">
+          <div className="absolute inset-0 w-0 h-full bg-[#ffd700] shadow-[0_0_10px_#ffd700] animate-[bootLoad_3s_linear_forwards]" />
         </div>
         <div className="mt-5 font-mono text-xs">AWAITING TRANSMISSION...</div>
       </div>
@@ -261,24 +263,7 @@ export default function Home() {
 
       {/* MAIN CONTENT */}
       <main className="relative z-5">
-        {/* HOME SECTION */}
-        <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center px-5">
-          <div className="hero-pre-title font-mono text-sm text-[rgba(255,255,255,0.5)] tracking-widest mb-5 opacity-0 translate-y-5 border-b border-[#ff003c] pb-2.5">
-            SYSTEM INITIALIZATION COMPLETE
-          </div>
-          <h1 className="hero-title font-[Cinzel_Decorative] text-8xl font-900 leading-tight mb-8 text-white opacity-0 translate-y-12 italic">
-            BELENTANI <span className="text-[#ff003c]">// JUDAS ERA</span>
-          </h1>
-          <p className="hero-subtitle font-[Chakra_Petch] font-300 text-lg text-[rgba(255,255,255,0.5)] max-w-2xl mb-12 opacity-0 translate-y-5">
-            Un sistema operativo humano corriendo cuatro procesos en paralelo. El Ángel. El Guerrero. El Analítico. El Cronista.
-            <br />
-            <br />
-            <em>La traición es el input. La voz es el output.</em>
-          </p>
-          <button className="cta-btn px-16 py-5 bg-transparent border border-[#ff003c] text-white font-[Orbitron] font-bold text-sm tracking-widest uppercase opacity-0 translate-y-5 hover:text-white hover:shadow-[0_0_60px_rgba(255,0,60,0.8)] hover:border-white transition-all duration-400">
-            Desbloquear Portal
-          </button>
-        </section>
+        <div id="home"><CinematicHero /></div>
 
         {/* THE ARTIST SECTION */}
         <section id="artist" className="section min-h-screen flex flex-col justify-center items-center px-8">
@@ -311,7 +296,7 @@ export default function Home() {
         {/* PORTAL SECTION */}
         <section id="portal" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
-            <span className="text-[#00ffff] italic">PORTAL</span>
+            <span className="text-[#ffffff] italic">PORTAL</span>
           </h2>
           <p className="section-subtitle font-mono text-sm text-[#ff003c] tracking-widest mb-16 opacity-0">
             Diamantes 3D Interactivos
@@ -324,7 +309,7 @@ export default function Home() {
         {/* CHALLENGES SECTION */}
         <section id="challenges" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
-            <span className="text-[#b026ff] italic">DESAFÍOS</span>
+            <span className="text-[#ff003c] italic">DESAFÍOS</span>
           </h2>
           <p className="section-subtitle font-mono text-sm text-[#ff003c] tracking-widest mb-16 opacity-0">
             // CÓDIGOS // DESAFÍOS // VALORES //
@@ -332,6 +317,7 @@ export default function Home() {
           <div className="w-full max-w-4xl">
             <ChallengeSystem />
             <QuantumTimelineViewer />
+            <CosmicCurtainShowcase />
             <QuantumTerminalConsole />
           </div>
         </section>
@@ -339,7 +325,7 @@ export default function Home() {
         {/* SYNTHESIZER SECTION */}
         <section id="synthesizer" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
-            <span className="text-[#00ff41] italic">SYNTHESIZER</span>
+            <span className="text-[#ffd700] italic">SYNTHESIZER</span>
           </h2>
           <p className="section-subtitle font-mono text-sm text-[#ff003c] tracking-widest mb-16 opacity-0">
             Sintetizador Funcional con Tone.js
@@ -365,7 +351,7 @@ export default function Home() {
         {/* MUSIC SECTION - ENHANCED */}
         <section id="music" className="section min-h-screen flex flex-col justify-center items-center px-8">
           <h2 className="section-title font-[Cinzel_Decorative] text-7xl font-900 text-center mb-5 opacity-0">
-            <span className="text-[#00ffff] italic">MUSIC</span> ARCHIVE
+            <span className="text-[#ffffff] italic">MUSIC</span> ARCHIVE
           </h2>
           <p className="section-subtitle font-mono text-sm text-[#ff003c] tracking-widest mb-16 opacity-0">
             Sonic Archive v4.0 - Reproductor Integrado
@@ -437,7 +423,7 @@ export default function Home() {
               <br />
               Sin condiciones. Sin juicio.
             </p>
-            <p className="font-mono text-xs text-[#00ff41] tracking-widest">
+            <p className="font-mono text-xs text-[#ffd700] tracking-widest">
               TRANSMISSION END
             </p>
             <p className="font-mono text-xs text-[#ff003c]">
